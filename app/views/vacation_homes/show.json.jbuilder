@@ -1,0 +1,1 @@
+json.extract! @vacation_home, :id, :business_id, :business_name, :property_address, :max_occupancy, :parking_spaces, :refuse_day, :created_at, :updated_at, :contact_name, :contact_email, :contact_phone

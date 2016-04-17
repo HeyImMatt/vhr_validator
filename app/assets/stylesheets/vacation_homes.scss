@@ -1,0 +1,23 @@
+// Place all the styles related to the VacationHomes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#jumbotron_search {
+  padding-top: 50px;
+}
+
+#home_search {
+  padding-top: 50px;
+}
+
+.search_field {
+  width: 500px;
+}
+
+.search_btn {
+  float: right;
+}

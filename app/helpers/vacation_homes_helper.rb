@@ -1,0 +1,2 @@
+module VacationHomesHelper
+end
