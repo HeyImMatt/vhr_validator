@@ -4,7 +4,7 @@ class VacationHome < ActiveRecord::Base
 # Method for searching the VHR database
 # TO DO - Implement better searh mechanism like elasticsearch
   def self.search(search)
-    where("property_address LIKE ?", "%#{search}%")
+    where("property_address LIKE :search OR contact_name LIKE :search OR contact_email LIKE :search OR contact_phone LIKE :search", search: "%#{search}%")
   end
 
 # Method for importing VHR csv files into our database
