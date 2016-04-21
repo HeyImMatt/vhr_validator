@@ -6,7 +6,6 @@
     <div class="row" id="home_search">
       <div class="col-md-8 col-md-offset-2 panel panel-default">
         <div class="panel-body">
-
           <%= form_tag(vacation_homes_path, :method => "GET", id: "search-form") do %>
             <%= text_field_tag :search, params[:search], class: "search_field", placeholder: "Property address or contact info of the person you're communicating with" %>
             <%= submit_tag "Search", class: "btn btn-primary btn-lrg search_btn", :name => nil %>
