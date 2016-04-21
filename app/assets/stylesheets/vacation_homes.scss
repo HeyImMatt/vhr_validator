@@ -6,8 +6,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-image: url(/assets/lake_bg.jpg);
+  background-size: cover;
+}
+
 #jumbotron_search {
-  padding-top: 50px;
+  position: relative;
+  top: 10px;
+  background: none;
+
 }
 
 #home_search {
