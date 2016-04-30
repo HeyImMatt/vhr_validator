@@ -6,7 +6,14 @@ class VacationHomesController < ApplicationController
   def index
     @vacation_homes = VacationHome.all
     if params[:search]
-        @vacation_homes = VacationHome.search(params[:search])
+      @vacation_homes = VacationHome.search(params[:search])
+      if @vacation_homes.any?
+        redirect_to '/search'
+        flash[:success] = "We have a match for #{params[:search]}"
+      else
+        redirect_to '/search'
+        flash[:danger] = "#{params[:search]} doesn't match up"
+      end
     else
       @vacation_homes = VacationHome.all.order("property_address")
     end

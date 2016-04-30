@@ -10,6 +10,7 @@
             <%= text_field_tag :search, params[:search], class: "search_field", placeholder: "Property address or contact info of the person you're communicating with" %>
             <%= submit_tag "Search", class: "btn btn-primary btn-lrg search_btn", :name => nil %>
           <% end %>
+          <%= render 'layouts/alerts' %>
           <!--TO DO - implement messaging for matching of info instead of going to a page with the search result -->
         </div>
       </div>
