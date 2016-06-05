@@ -14,7 +14,11 @@ body {
 #jumbotron_search {
   position: relative;
   top: 10px;
-  background: none;
+  background: rgba(0, 0, 0, 0.5);
+
+  h1, h3, p {
+    color: white;
+  }
 
 }
 
@@ -29,4 +33,9 @@ body {
 
 .search_btn {
   float: right;
+}
+
+.index_page {
+  background-color: white;
+  padding: 10px 20px 10px 20px;
 }

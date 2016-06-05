@@ -1,50 +1,52 @@
-<p id="notice"><%= notice %></p>
+<div class="index_page"
+  <p id="notice"><%= notice %></p>
 
-<h1>Listing Vacation Homes</h1>
+  <h1>Listing Vacation Homes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Business ID</th>
-      <th>Business Name</th>
-      <th>Contact Name</th>
-      <th>Contact Email</th>
-      <th>Contact Phone</th>
-      <th>Property Address</th>
-      <th>Max Occupancy</th>
-      <th>Parking Spaces</th>
-      <th>Refuse Day</th>
-      </th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @vacation_homes.each do |vacation_home| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= vacation_home.business_id %></td>
-        <td><%= vacation_home.business_name %></td>
-        <td><%= vacation_home.contact_name %></td>
-        <td><%= vacation_home.contact_email %></td>
-        <td><%= vacation_home.contact_phone %></td>
-        <td><%= vacation_home.property_address %></td>
-        <td><%= vacation_home.max_occupancy %></td>
-        <td><%= vacation_home.parking_spaces %></td>
-        <td><%= vacation_home.refuse_day %></td>
-        <td><%= link_to 'Show', vacation_home %></td>
-        <td><%= link_to 'Edit', edit_vacation_home_path(vacation_home) %></td>
-        <td><%= link_to 'Destroy', vacation_home, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Business ID</th>
+        <th>Business Name</th>
+        <th>Contact Name</th>
+        <th>Contact Email</th>
+        <th>Contact Phone</th>
+        <th>Property Address</th>
+        <th>Max Occupancy</th>
+        <th>Parking Spaces</th>
+        <th>Refuse Day</th>
+        </th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @vacation_homes.each do |vacation_home| %>
+        <tr>
+          <td><%= vacation_home.business_id %></td>
+          <td><%= vacation_home.business_name %></td>
+          <td><%= vacation_home.contact_name %></td>
+          <td><%= vacation_home.contact_email %></td>
+          <td><%= vacation_home.contact_phone %></td>
+          <td><%= vacation_home.property_address %></td>
+          <td><%= vacation_home.max_occupancy %></td>
+          <td><%= vacation_home.parking_spaces %></td>
+          <td><%= vacation_home.refuse_day %></td>
+          <td><%= link_to 'Show', vacation_home %></td>
+          <td><%= link_to 'Edit', edit_vacation_home_path(vacation_home) %></td>
+          <td><%= link_to 'Destroy', vacation_home, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Vacation home', new_vacation_home_path %>
-<br />
-<br />
-<%= form_tag import_vacation_homes_path, multipart: true do %>
-  <%= file_field_tag :file %>
-  <%= submit_tag "Import" %>
-<% end %>
+  <br>
+
+  <%= link_to 'New Vacation home', new_vacation_home_path %>
+  <br />
+  <br />
+  <%= form_tag import_vacation_homes_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import" %>
+  <% end %>
+</div>
