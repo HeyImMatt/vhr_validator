@@ -1,3 +1,3 @@
 == README
 
-Possible project for the Code for America Brigade in Tahoe. I'm learning rails so this is far from perfect and not nearly ready for primetime. Just wanted to get it into Github for now.
+Possible project for the Code for America Brigade in Tahoe. This is a prototype of a search specifically for vacationers looking to validate that the person they are in contact with can rent the vacation home they found.
