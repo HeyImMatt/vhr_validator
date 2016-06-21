@@ -1,3 +1,9 @@
 == README
 
-Possible project for the Code for America Brigade in Tahoe. This is a prototype of a search specifically for vacationers looking to validate that the person they are in contact with can rent the vacation home they found.
+Possible project for the Tahoe Code for America Brigade. This is a prototype of a search specifically for vacationers looking to validate that the person they are in contact with can rent the vacation home they found.
+
+Preview here: https://vhr-validator.herokuapp.com/
+
+You should get a successful validation searching for any of the following: Jimbo, Jane, 1001 Heavenly Village Way, and 530-555-0987
+
+The full list and current location of the CSV upload field is here: https://vhr-validator.herokuapp.com/homes
