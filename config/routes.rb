@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'search', to: 'vacation_homes#search'
 
+  get 'homes', to: 'vacation_homes#index'
+
   root to: 'vacation_homes#search'
 
   # Example of regular route:
